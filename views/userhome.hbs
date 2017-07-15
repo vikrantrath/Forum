@@ -1,0 +1,25 @@
+<h1> Hi {{iden}} </h1>
+<section>
+<div>
+<a type="button" href="/show" method="get"/>Get Started</a>
+    <div>
+        {{#each items }}
+            <article >
+                <div>ID: {{ this.article }}</div>
+            </article>
+        {{/each}}
+    </div>
+</div>
+</section>
+<br>
+<br>
+
+<section class="insert">
+    <h3>Insert Data</h3>
+    <form action="/create" method="post">
+        <div class="input">
+            <textarea rows="4" cols="50" name="article">Enter Article here...</textarea>
+        </div>
+        <button type="submit">INSERT</button>
+    </form>
+</section>
